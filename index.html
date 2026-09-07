@@ -1,209 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Prasad Patil · Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prasad Patil | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Background Elements -->
-  <div class="bg-gradient"></div>
-  <div class="bg-shapes">
-    <div class="bg-circle"></div>
-    <div class="bg-circle"></div>
-    <div class="bg-circle"></div>
-  </div>
+  <!-- Ambient Spotlight Glow Background -->
+  <div class="ambient-glow" id="ambientGlow"></div>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="nav-container">
-      <a href="#home" class="logo">
-        <div class="logo-icon"><i class="fas fa-heart"></i></div>
-        <span>Prasad</span>
-      </a>
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#" class="logo">Prasad<span>.dev</span></a>
+    <nav>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#tech">Tech</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn-nav">Contact</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-card fade-up">
-      <div class="hero-image-container">
-        <img src="prasad_photocopy.jpg" alt="Prasad Patil" class="hero-profile-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%231a1a3a%22/%3E%3Ccircle cx=%22100%22 cy=%2280%22 r=%2250%22 fill=%22%236366f1%22 opacity=%220.3%22/%3E%3Ccircle cx=%22100%22 cy=%2280%22 r=%2230%22 fill=%22%23818cf8%22 opacity=%220.6%22/%3E%3Ctext x=%2270%22 y=%22150%22 font-family=%22Arial%22 font-size=%2228%22 fill=%22%23c4b5fd%22%3EPP%3C/text%3E%3C/svg%3E'" />
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        Available for full-time roles & projects
       </div>
-      <h1>Hi, I'm <span class="gradient-text">Prasad Patil</span></h1>
-      <p class="subtitle">Full-Stack Web Developer</p>
-      <p class="tagline">BCA Graduate • Creative Developer • Problem Solver</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/prasad-bhavkanna-patil-9746942a1" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/PrasadBhavkannaPatil" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-      <div class="btn-group">
+      <h1 class="hero-title">
+        Building modern, high-performance <span class="gradient-text">web experiences</span>.
+      </h1>
+      <p class="hero-subtitle">
+        I am Prasad Patil — a full-stack developer dedicated to writing clean code, building responsive user interfaces, and solving real-world challenges.
+      </p>
+      <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">Explore Work</a>
-        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Tech Stack -->
-  <section id="tech">
-    <div class="container">
-      <h2 class="section-title fade-up">Tech Stack</h2>
-      <div class="section-glass fade-up">
-        <div class="tech-grid">
-          <div class="tech-card"><i class="fab fa-html5" style="color:#E34F26;"></i><h3>HTML5</h3></div>
-          <div class="tech-card"><i class="fab fa-css3-alt" style="color:#1572B6;"></i><h3>CSS3</h3></div>
-          <div class="tech-card"><i class="fab fa-js" style="color:#F7DF1E;"></i><h3>JavaScript</h3></div>
-          <div class="tech-card"><i class="fab fa-php" style="color:#777BB4;"></i><h3>PHP</h3></div>
-          <div class="tech-card">
-            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M2 17L12 22L22 17" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M2 12L12 17L22 12" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-            </svg>
-            <h3>Next.js</h3>
+    <!-- Bento Grid Section -->
+    <section id="about" class="section">
+      <h2 class="section-title">Highlights</h2>
+      <div class="bento-grid">
+        <div class="bento-card bento-wide fade-in">
+          <span class="card-tag">Architecture</span>
+          <h3>End-to-End Development</h3>
+          <p>Proficient in orchestrating reliable client-side applications paired with scalable backend APIs, database management, and cloud deployments.</p>
+        </div>
+        <div class="bento-card fade-in">
+          <span class="card-tag">Clean Code</span>
+          <h3>Maintainable & Scalable</h3>
+          <p>Adhering to SOLID principles, unit testing, and component-driven modularity.</p>
+        </div>
+        <div class="bento-card fade-in">
+          <span class="card-tag">Experience</span>
+          <h3 class="stat-number">100%</h3>
+          <p>Committed to accessible interfaces and sub-second page performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-item fade-in">JavaScript (ES6+)</div>
+        <div class="skill-item fade-in">React.js</div>
+        <div class="skill-item fade-in">Node.js</div>
+        <div class="skill-item fade-in">Python</div>
+        <div class="skill-item fade-in">SQL / NoSQL</div>
+        <div class="skill-item fade-in">Git & CI/CD</div>
+        <div class="skill-item fade-in">RESTful APIs</div>
+        <div class="skill-item fade-in">Modern CSS / SCSS</div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <h3>Web Application Dashboard</h3>
+            <span class="year">2026</span>
           </div>
-          <div class="tech-card"><i class="fab fa-python" style="color:#3776AB;"></i><h3>Python</h3></div>
+          <p class="project-desc">Real-time analytical metrics dashboard with responsive visualization tools and user role permissions.</p>
+          <div class="project-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Tailwind</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/prasadbhavkannapatil" target="_blank" rel="noopener">Source Code &rarr;</a>
+            <a href="#" target="_blank" rel="noopener">Live Demo &nearr;</a>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title fade-up">Featured Projects</h2>
-      <div class="projects-grid fade-up" id="projectsGrid">
-        <!-- Project 1: College Voting System -->
-        <div class="project-card" data-project="0">
-          <i class="fas fa-vote-yea"></i>
-          <h3>College Voting System</h3>
-          <p>Digital platform for secure, paperless college elections with instant results.</p>
-          <button class="project-btn" data-project="0">More Info →</button>
-        </div>
-        <!-- Project 2: E-Commerce Platform -->
-        <div class="project-card" data-project="1">
-          <i class="fas fa-shopping-cart"></i>
-          <h3>E-Commerce Platform</h3>
-          <p>Full-stack online store with payment gateway and admin dashboard.</p>
-          <button class="project-btn" data-project="1">More Info →</button>
-        </div>
-        <!-- Project 3: Task Manager App -->
-        <div class="project-card" data-project="2">
-          <i class="fas fa-tasks"></i>
-          <h3>Task Manager App</h3>
-          <p>Productivity tool with real-time updates and team collaboration.</p>
-          <button class="project-btn" data-project="2">More Info →</button>
-        </div>
-        <!-- Project 4: PrepWise-Lite -->
-        <div class="project-card" data-project="3">
-          <i class="fas fa-graduation-cap"></i>
-          <h3>PrepWise-Lite</h3>
-          <p>Lightweight exam preparation platform with mock tests and analytics.</p>
-          <button class="project-btn" data-project="3">More Info →</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resume -->
-  <section id="resume">
-    <div class="container">
-      <h2 class="section-title fade-up">My Resume</h2>
-      <div class="resume-viewer fade-up">
-        <embed src="resume.pdf" type="application/pdf" width="100%" height="100%" />
-      </div>
-      <div style="text-align:center;">
-        <a href="resume.pdf" download class="download-btn"><i class="fas fa-download"></i> Download Resume</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <div class="container">
-      <h2 class="section-title fade-up">Work Experience</h2>
-      <div class="section-glass fade-up">
-        <div class="exp-grid">
-          <div class="exp-card">
-            <h3>Web Development Intern</h3>
-            <p class="company">Digital Creations</p>
-            <p style="color:rgba(255,255,255,0.5);">Jan 2025 – March 2025</p>
-            <p style="margin-top:0.5rem;">Built responsive websites and optimized client projects.</p>
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <h3>Cloud Automation Platform</h3>
+            <span class="year">2025</span>
+          </div>
+          <p class="project-desc">A microservice pipeline automating serverless deployment workflows and continuous integration triggers.</p>
+          <div class="project-tags">
+            <span>Node.js</span>
+            <span>Docker</span>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/prasadbhavkannapatil" target="_blank" rel="noopener">Source Code &rarr;</a>
+            <a href="#" target="_blank" rel="noopener">Live Demo &nearr;</a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education -->
-  <section id="education">
-    <div class="container">
-      <h2 class="section-title fade-up">Education</h2>
-      <div class="section-glass fade-up">
-        <div class="edu-grid">
-          <div class="edu-card">
-            <i class="fas fa-graduation-cap"></i>
-            <h3>Matriculation</h3>
-            <p>New English School</p>
-            <p style="color:#f5a623;">2017-2020 | Distinction</p>
-          </div>
-          <div class="edu-card">
-            <i class="fas fa-graduation-cap"></i>
-            <h3>Intermediate (10+2)</h3>
-            <p>Jyoti Pre-University</p>
-            <p style="color:#f5a623;">2020-2022 | First Class</p>
-          </div>
-          <div class="edu-card">
-            <i class="fas fa-graduation-cap"></i>
-            <h3>BCA</h3>
-            <p>Rani Channamma University</p>
-            <p style="color:#f5a623;">2022-2025 | CGPA: 8.1/10</p>
-          </div>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section fade-in">
+      <h2>Let's build something remarkable.</h2>
+      <p>Looking for a developer to help elevate your team or product? Let's connect.</p>
+      <div class="contact-actions">
+        <a href="mailto:your-email@domain.com" class="btn btn-primary">Send an Email</a>
+        <a href="https://github.com/prasadbhavkannapatil" target="_blank" class="btn btn-secondary">GitHub Profile</a>
       </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title fade-up">Get In Touch</h2>
-      <div class="section-glass fade-up" style="max-width:650px; margin:0 auto;">
-        <form id="contactForm" action="https://formspree.io/f/xlgzlvqr" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Email Address" required />
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit" id="submitBtn">Send Message →</button>
-        </form>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2026 Prasad Patil | Crafted with L<i class="fas fa-heart"></i>ve.</p>
+    <p>&copy; 2026 Prasad Patil. Crafted with semantic HTML, CSS, and vanilla JS.</p>
   </footer>
-
-  <!-- Modal Overlay -->
-  <div class="modal-overlay" id="projectModal">
-    <div class="modal-box">
-      <span class="close-modal" id="closeModalBtn">&times;</span>
-      <h2 id="modalTitle">Project Title</h2>
-      <div class="modal-sub" id="modalSub">Full description</div>
-      <div id="modalBody"></div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
