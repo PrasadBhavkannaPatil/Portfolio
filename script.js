@@ -1,11 +1,11 @@
-// Interactive Ambient Cursor Spotlight Glow
+// Interactive Ambient Cursor Follower Glow
 const glow = document.getElementById('ambientGlow');
 
 window.addEventListener('mousemove', (e) => {
   glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
 });
 
-// Intersection Observer for Smooth Scroll Reveals
+// Intersection Observer for Smooth Scroll Reveal Animations
 const appearOnScroll = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach((entry) => {
@@ -15,8 +15,8 @@ const appearOnScroll = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px',
+    threshold: 0.12,
+    rootMargin: '0px 0px -30px 0px',
   }
 );
 
